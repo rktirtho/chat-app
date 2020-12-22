@@ -3,6 +3,7 @@ package com.rktirtho.chat.controller;
 import java.util.Set;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.rktirtho.chat.userstorage.UserStorage;
 
 @RestController
+@CrossOrigin
 public class UserController {
 	
 	@GetMapping("registration/{username}")

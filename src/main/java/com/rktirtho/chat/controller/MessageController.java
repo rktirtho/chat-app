@@ -21,7 +21,7 @@ public class MessageController {
 		boolean ifExists = UserStorage.getInstance().getUsers().contains(to);
 		
 		if (ifExists) {
-			simpMessagingTemplate.convertAndSend("topic/massages/"+to,message);
+			simpMessagingTemplate.convertAndSend("topic/messages/"+to,message);
 		}
 		
 	}

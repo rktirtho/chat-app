@@ -13,6 +13,7 @@ public class UserStorage {
 	public static synchronized UserStorage getInstance() {
 		if (instance == null) {
 			instance = new UserStorage();
+			instance.users.add("rktirtho");
 		}
 		return instance;
 		
